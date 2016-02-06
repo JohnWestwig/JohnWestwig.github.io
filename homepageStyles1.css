@@ -32,6 +32,11 @@ tr, td {
 .right {
     text-align: right;
 }
+
+a {
+    color: black;
+}
+
 #content {
     text-align: left;
 }
@@ -57,7 +62,7 @@ div {
     left: 65%;
     top: 10px;
     bottom: 0%;
-    border-left: 2px solid black; 
+    border-left: 2px solid royalblue; 
 }
 
 #sidebar {
