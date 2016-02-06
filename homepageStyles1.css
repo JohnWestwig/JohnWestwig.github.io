@@ -1,16 +1,46 @@
 body {
     font-family: "Verdana", Georgia, Serif;
+    /*min-width: 1050px;*/
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 200;
 }
 
 img {
-    border: 5px ridge green;
+    border: 2px ridge black;
+}
+
+table {
+    width: 100%;
+}
+
+tr, td {
+    border-bottom: 1px dashed black;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+#content {
+    text-align: left;
 }
 
 div {
     /*border: 1px solid black;*/
-    text-align: center;
     margin: 10px;
     height: 100vh;
+    text-align: center;
 }
 
 
@@ -40,5 +70,5 @@ div {
 
 
 #profile {
-    height: 200px;
+    width: 75%;
 }
