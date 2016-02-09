@@ -1,6 +1,5 @@
 body {
     font-family: "Verdana", Georgia, Serif;
-    /*min-width: 1050px;*/
 }
 
 h1 {
@@ -42,7 +41,7 @@ a {
 }
 
 div {
-    /*border: 1px solid black;*/
+    /*border: 1px solid black;  FOR TESTING*/
     margin: 10px;
     height: 100vh;
     text-align: center;
@@ -69,8 +68,6 @@ div {
     float: right;
     width: 30%;
     height: 100%;
-    
-    /*background-color: teal;*/
 }
 
 
