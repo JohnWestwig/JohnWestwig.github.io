@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="homepageStyles1.css">
-    <title>John Westwig - Home</title>
-</head>
-<body>
-    <div id="main">
-    <h1>Welcome to John Westwig's Homepage!</h1>   
-    <div id="content">
-        <table>
-            <tr>
-                <td class="left"><h3>About me... </h3></td>
-                <td class="right"><a href="bio.html">BIO</a></td>
-            </tr>
-            <tr>
-                <td class="left"><h3>My skills...</h3></td>
-                <td class="right"><a href="resume.html">RÉSUMÉ</a></td>
-            </tr>
-        </table>
-    </div>
-    </div>
-    <div id="divider"></div>
-    <div id="sidebar">
-    <img id="profile" src="profile.jpg" alt="Picture of me!">
-    </div>
-</body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+
+    <title>john westwig chronology</title>
+</head>
+
+<body onload="setUpCheckboxListeners()">
+    <header>
+        <h1>john westwig, a chronology</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>show me</legend>
+            <label>chess<input type="checkbox" name="chess" checked /></label>
+            <label>code<input type="checkbox" name="code" checked /></label>
+            <label>crosswords<input type="checkbox" name="crosswords" checked /></label>
+            <label>jobs<input type="checkbox" name="jobs" checked /></label>
+            <label>travel<input type="checkbox" name="travel" checked /></label>
+            <label>other<input type="checkbox" name="other" checked /></label>
+
+        </fieldset>
+        <section id="timeline">
+            <div class="event travel">
+                <div class="content">
+                    <p>gone postal @ mailbox peak</p>
+                    <div class="carousel">
+                        <img src="mailbox.png" />
+                        <img src="mailbox.png" />
+                        <img src="mailbox.png" />
+                        <img src="mailbox.png" />
+                        <img src="mailbox.png" />
+                    </div>
+                    <p>officially mailing it in these days</p>
+                </div>
+
+                <p class="date">January Eighteenth Two Thousand Twenty One</p>
+            </div>
+            <div class="event crosswords">
+                <div class="content">
+                    <p>My third puzzle for the New York Times, and my best yet</p>
+                    <p>wow, a big x</p>
+                    <p>Solve it <a href="https://www.nytimes.com/crosswords/game/daily/2018/12/13">here</a>, read about
+                        it
+                        on <a
+                            href="https://www.nytimes.com/2018/12/12/crosswords/daily-puzzle-2018-12-13.html">wordplay</a>,
+                        <a href="https://crosswordfiend.com/2018/12/12/thursday-december-13-2018/">crossword fiend</a>
+                        and
+                        <a href="https://www.xwordinfo.com/Crossword?date=12/13/2018">xwordinfo</a>
+                    </p>
+                    <img src="crossword-dec-13-2018.png" />
+                </div>
+                <p class="date">December Thirteenth Two Thousand Eighteen</p>
+            </div>
+            <div class="event crosswords">
+                <div class="content">
+                    <p>A puzzle I made about cars and also people</p>
+                    <p>Solve it <a href="https://www.nytimes.com/crosswords/game/daily/2016/05/03">here</a>, read about
+                        it
+                        on <a
+                            href="https://wordplay.blogs.nytimes.com/2016/05/02/getting-around-2/?rref=XWordInfo">wordplay</a>,
+                        <a href="https://crosswordfiend.com/2016/05/02/tuesday-may-3-2016/">crossword fiend</a> and
+                        <a href="https://www.xwordinfo.com/Crossword?date=5/3/2016">xwordinfo</a>
+                    </p>
+                    <p>Don't read about it on <a
+                            href="https://rexwordpuzzle.blogspot.com/2016/05/proto-matter-of-universe-tue-5-3-16.html">Rex
+                            Parker's blog</a>, he hated it</p>
+                    <img src="crossword-may-3-2016.png" />
+                </div>
+                <p class="date">May Third Two Thousand Sixteen</p>
+            </div>
+            <div class="event crosswords">
+                <div class="content">
+                    <p>Debut New York Times crossword puzzle</p>
+                    <p>Solve it <a href="https://www.nytimes.com/crosswords/game/daily/2015/07/20">here</a>, read about
+                        it
+                        on <a
+                            href="https://wordplay.blogs.nytimes.com/2015/07/19/early-riser/?rref=XWordInfo">wordplay</a>,
+                        <a href="https://crosswordfiend.com/2015/07/19/monday-july-20-2015/">crossword fiend</a> and
+                        <a href="https://www.xwordinfo.com/Crossword?date=7/20/2015">xwordinfo</a>
+                    </p>
+                    <img src="crossword-july-20-2015.png" />
+                </div>
+                <p class="date">July Twentieth Two Thousand Fifteen</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
